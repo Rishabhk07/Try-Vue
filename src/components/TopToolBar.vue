@@ -2,12 +2,15 @@
   <v-toolbar class="danger" light>
     <v-toolbar-title>Hiring Blocks</v-toolbar-title>
     <v-spacer></v-spacer>
-    <v-btn v-if="loggedIn" v-on:click.native="loginToggle(false)" class="accent-1"dark >
+
+    <v-toolbar-items>
+      <v-toolbar-item v-if="loggedIn" v-on:click.native="loginToggle(false)" class="accent-1"dark >
       SignOut
-    </v-btn>
-    <v-btn v-else v-on:click.native="loginToggle(true)" class="accent-1"dark >
-      SignIn
-    </v-btn>
+    </v-toolbar-item  >
+      <v-toolbar-item v-else>
+        <router-link  to="login" ><v-btn>SignIn</v-btn></router-link>
+      </v-toolbar-item>
+    </v-toolbar-items>
   </v-toolbar>
 </template>
 

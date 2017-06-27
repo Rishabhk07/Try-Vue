@@ -9,6 +9,7 @@
       </v-list-tile>
     </v-list-item>
   </v-list>
+  <v-spacer></v-spacer>
 </v-navigation-drawer>
 </template>
 
