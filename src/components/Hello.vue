@@ -7,7 +7,7 @@ export default {
   name: 'hello',
   data () {
     return {
-      msg: 'GOd OF WAR'
+      msg: ''
     }
   }
 }
