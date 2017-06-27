@@ -43,7 +43,7 @@
           password: this.password
         }).then((response) => {
           console.log(JSON.stringify(response))
-          store.dispatch('handleLoginLogout', true)
+          store.dispatch('handleLoginLogout', {token: response.data.token})
         })
       }
     }
