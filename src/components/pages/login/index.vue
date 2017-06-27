@@ -28,6 +28,7 @@
 </template>
 
 <script>
+  import store from '@/store'
   import API from '@/http'
   export default {
     name: 'signin',
@@ -42,6 +43,7 @@
           password: this.password
         }).then((response) => {
           console.log(JSON.stringify(response))
+          store.dispatch('handleLoginLogout', true)
         })
       }
     }

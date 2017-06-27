@@ -5,7 +5,7 @@
 
     <v-toolbar-items>
       <v-toolbar-item v-if="loggedIn" v-on:click.native="loginToggle(false)" class="accent-1"dark >
-      SignOut
+      <v-btn>SignOut</v-btn>
     </v-toolbar-item  >
       <v-toolbar-item v-else>
         <router-link  to="login" ><v-btn>SignIn</v-btn></router-link>
