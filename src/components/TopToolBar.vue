@@ -1,5 +1,5 @@
 <template>
-  <v-toolbar class="danger" light>
+  <v-toolbar class="red darken-2" light>
     <v-toolbar-title>Hiring Blocks</v-toolbar-title>
     <v-spacer></v-spacer>
 
@@ -9,6 +9,8 @@
     </v-toolbar-item  >
       <v-toolbar-item v-else>
         <router-link  to="login" ><v-btn>SignIn</v-btn></router-link>
+        <router-link  to="signup" ><v-btn>SignUp</v-btn></router-link>
+
       </v-toolbar-item>
     </v-toolbar-items>
   </v-toolbar>

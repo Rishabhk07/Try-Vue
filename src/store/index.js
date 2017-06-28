@@ -22,6 +22,9 @@ export default new Vuex.Store({
       getState: (key) => Cookies.getJSON(key),
       setState: (key, state) => Cookies.set(key, state, {
         expires: 3
+        // secure: true will save the token encrypted with ssl of certificate of page in cookies
+        // FIXME: hence in production secure: true
+        // secure: true
       }),
       reducer (state) {
         return {
